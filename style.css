@@ -1,0 +1,489 @@
+/* ==============================
+SIVELIA MWEENDA PORTFOLIO
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #080b0a;
+color: #ffffff;
+line-height: 1.6;
+}
+
+/* ==============================
+NAVIGATION
+============================== */
+
+header {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+background: rgba(8, 11, 10, 0.88);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.navbar {
+max-width: 1150px;
+margin: auto;
+height: 75px;
+padding: 0 25px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.logo {
+font-size: 25px;
+font-weight: 800;
+letter-spacing: -1px;
+}
+
+.logo span,
+.footer-logo span {
+color: #d6a84f;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 30px;
+}
+
+.nav-links a {
+color: #ddd;
+text-decoration: none;
+font-size: 14px;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #d6a84f;
+}
+
+.menu-btn {
+display: none;
+background: none;
+border: none;
+color: white;
+font-size: 26px;
+}
+
+/* ==============================
+HERO
+============================== */
+
+.hero {
+min-height: 100vh;
+max-width: 1150px;
+margin: auto;
+padding: 130px 25px 70px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+
+}
+
+.hero-content {
+max-width: 650px;
+}
+
+.small-text,
+.section-label {
+color: #d6a84f;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 18px;
+}
+
+.hero h1 {
+font-size: clamp(45px, 7vw, 80px);
+line-height: 1.05;
+letter-spacing: -3px;
+margin-bottom: 20px;
+}
+
+.hero h1 span {
+color: #d6a84f;
+}
+
+.hero h2 {
+color: #b9b9b9;
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+.hero-description {
+color: #929292;
+max-width: 560px;
+font-size: 16px;
+margin-bottom: 32px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+/* ==============================
+BUTTONS
+============================== */
+
+.btn {
+display: inline-block;
+padding: 13px 24px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+transition: 0.3s;
+}
+
+.primary {
+background: #d6a84f;
+color: #080b0a;
+}
+
+.primary:hover {
+transform: translateY(-3px);
+}
+
+.secondary {
+border: 1px solid #444;
+color: white;
+}
+
+.secondary:hover {
+border-color: #d6a84f;
+color: #d6a84f;
+}
+
+/* ==============================
+PROFILE IMAGE
+============================== */
+
+.hero-image {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image-circle {
+width: 330px;
+height: 330px;
+
+border-radius: 50%;
+padding: 10px;
+
+border: 1px solid #d6a84f;
+
+animation: floating 4s ease-in-out infinite;
+
+}
+
+.placeholder {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+
+background: #111714;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 75px;
+font-weight: bold;
+color: #d6a84f;
+
+}
+
+@keyframes floating {
+
+0%, 100% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-12px);
+}
+
+}
+
+/* ==============================
+SECTIONS
+============================== */
+
+.about-preview,
+.skills,
+.projects,
+.contact {
+max-width: 1150px;
+margin: auto;
+padding: 100px 25px;
+}
+
+.about-preview {
+max-width: 900px;
+text-align: center;
+}
+
+.about-preview h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+font-size: clamp(32px, 5vw, 50px);
+line-height: 1.1;
+margin-bottom: 20px;
+}
+
+.about-preview p:not(.section-label) {
+color: #999;
+max-width: 700px;
+margin: auto;
+}
+
+.text-link {
+display: inline-block;
+color: #d6a84f;
+text-decoration: none;
+margin-top: 20px;
+font-weight: bold;
+}
+
+/* ==============================
+SKILLS
+============================== */
+
+.skills {
+text-align: center;
+}
+
+.skills-grid {
+margin-top: 50px;
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 18px;
+
+}
+
+.skill-card {
+background: #101512;
+border: 1px solid #1d2520;
+padding: 30px 20px;
+text-align: left;
+border-radius: 10px;
+
+transition: 0.3s;
+
+}
+
+.skill-card:hover {
+transform: translateY(-8px);
+border-color: #d6a84f;
+}
+
+.icon {
+font-size: 30px;
+margin-bottom: 18px;
+}
+
+.skill-card h3 {
+margin-bottom: 10px;
+}
+
+.skill-card p {
+color: #858585;
+font-size: 14px;
+}
+
+/* ==============================
+PROJECTS
+============================== */
+
+.projects {
+text-align: center;
+}
+
+.project-grid {
+margin-top: 50px;
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+
+}
+
+.project-card {
+text-align: left;
+background: #101512;
+border: 1px solid #1d2520;
+padding: 30px;
+border-radius: 10px;
+
+transition: 0.3s;
+
+}
+
+.project-card:hover {
+transform: translateY(-8px);
+border-color: #d6a84f;
+}
+
+.project-number {
+color: #d6a84f;
+font-size: 13px;
+font-weight: bold;
+margin-bottom: 35px;
+}
+
+.project-card h3 {
+font-size: 22px;
+margin-bottom: 12px;
+}
+
+.project-card p {
+color: #858585;
+font-size: 14px;
+margin-bottom: 25px;
+}
+
+.project-card a {
+color: #d6a84f;
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+}
+
+/* ==============================
+CONTACT
+============================== */
+
+.contact {
+text-align: center;
+background: #0d110f;
+max-width: 100%;
+}
+
+.contact p:not(.section-label) {
+color: #888;
+margin-bottom: 30px;
+}
+
+/* ==============================
+FOOTER
+============================== */
+
+footer {
+text-align: center;
+padding: 50px 20px;
+border-top: 1px solid #1d2520;
+}
+
+.footer-logo {
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+footer p {
+color: #777;
+font-size: 13px;
+}
+
+.copyright {
+margin-top: 20px;
+}
+
+/* ==============================
+MOBILE
+============================== */
+
+@media (max-width: 800px) {
+
+.nav-links {
+    display: none;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    justify-content: center;
+}
+
+.image-circle {
+    width: 230px;
+    height: 230px;
+}
+
+.placeholder {
+    font-size: 55px;
+}
+
+.skills-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-grid {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.skills-grid {
+    grid-template-columns: 1fr;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero h2 {
+    font-size: 17px;
+}
+
+.about-preview,
+.skills,
+.projects,
+.contact {
+    padding: 80px 20px;
+}
+
+}
+.placeholder,
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
